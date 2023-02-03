@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+
+	<title>Xema Riotz - Web Designer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Copyright" content="Xema Riotz" />
+
+    <meta http-equiv="Content-Language" content="es" />
+	
+    <meta name="title" content="Xema Riotz - Web Designer" />
+    <meta name="description" content="Xema Riotz · Diseñador y Desarrollador Front-End." />
+    <meta name="keywords" content="xema, riotz," />
+    <meta name="author" content="Xema Riotz" />
+
+    <!--[if lt IE]>
+    <script>location.href="http://www.xemariotz.com/CV" </script>
+    <![endif]-->
+    
+	<script src="js/prefixfree.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+    <script src="js/modernizr.custom.25376.js"></script>
+
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-47953025-1', 'xemariotz.com');
+      ga('send', 'pageview');
+    
+    </script>
+
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  background-color:#F6F6F6;
+  background-image:url(images/bg.png);
+  background-repeat:no-repeat;
+  background-position:top;
+}
+div.foo{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top:10%;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 5em;
+  margin: 0.2em;
+  position: relative;
+  color: #ed8151;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+  cursor:default;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+</style>
+
+</head>
+
+<body>
+
+		<div id="perspective" class="perspective effect-rotateleft">
+			<div class="container">
+                <div class="foo">
+                  <span class="letter" data-letter="X">X</span>
+                  <span class="letter" data-letter="E">E</span>
+                  <span class="letter" data-letter="M">M</span>
+                  <span class="letter" data-letter="A">A</span>
+                
+                  <span class="letter" style="margin-left:60px;" data-letter="R">R</span>
+                  <span class="letter" data-letter="I">I</span>
+                  <span class="letter" data-letter="O">O</span>
+                  <span class="letter" data-letter="T">T</span>
+                  <span class="letter" data-letter="Z">Z</span>
+                </div>
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					<div class="main clearfix">
+						<div>
+							<p><button id="showMenu">Mostrar Menu</button></p>
+						</div>
+					</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav right vertical">
+				<a href="http://www.linkedin.com/pub/xema-riotz/65/a39/547" target="_blank" class="icon-news">Linkedin</a>
+				<a href="/CV" class="icon-image">Resume Portfolio</a>
+				<!--<a href="#" class="icon-upload">Uploads</a>-->
+				<!--<a href="#" class="icon-star">Favorites</a>-->
+				<a href="mailto:xema.ds@gmail.com?Subject=Hola! Te escribo desde tu portfolio..." class="icon-mail">Mail</a>
+			</nav>
+		</div><!-- /perspective -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+
+</body>
+
+</html>
